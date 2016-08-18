@@ -4,7 +4,7 @@
 		$email = $_POST['email'];
 		$website = $_POST['website'];
 		$message = $_POST['message'];
-		$human = intval($_POST['human']);
+		
 		$from = 'Demo Contact Form'; 
 		$to = 'johnriepe@gmail.com'; 
 		$subject = 'Message from Contact Demo ';
@@ -25,13 +25,10 @@
 		if (!$_POST['message']) {
 			$errMessage = 'Please enter your message';
 		}
-		//Check if simple anti-bot test is correct
-		if ($human !== 5) {
-			$errHuman = 'Your anti-spam is incorrect';
-		}
+		
  
 // If there are no errors, send the email
-if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+if (!$errName && !$errEmail && !$errMessage) {
 	if (mail ($to, $subject, $body, $from)) {
 		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
 	} else {
