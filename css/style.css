@@ -307,16 +307,3 @@ nav#tf-footer {
 	padding: 3% 0 2% 0;
 	color: #f1f1f1;
 }
-
-
-.imgOver { 
-   position: relative; 
-   width: 100%; /* for IE 6 */
-}
-
-.textOver { 
-   position: absolute; 
-   top: 200px; 
-   left: 0; 
-   width: 100%; 
-}
