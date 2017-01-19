@@ -309,7 +309,10 @@ nav#tf-footer {
 }
 
 .imgDiv {
-	border: 3px solid #F7DB40;
+	border-radius: 3%;
+	border: 3px solid black;
 	padding: 3px;
+	background-color: #F7DB40;
+	cursor: pointer;
 }
 
