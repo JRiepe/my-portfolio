@@ -4,6 +4,11 @@
 //
 //
 
+$('.imgDiv').click(function() {
+  var url = $(this).attr("href");
+  window.open(url, '_blank');
+});
+
 function main() {
 
 $(function () {
