@@ -6,7 +6,9 @@
 
 $('.imgDiv').click(function() {
   var url = $(this).attr("href");
-  window.open(url, '_blank');
+  if (url) {
+    window.open(url, '_blank');
+  }
 });
 
 function main() {
